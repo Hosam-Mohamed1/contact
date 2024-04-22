@@ -1,0 +1,76 @@
+/* Add this CSS to style.css */
+
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.right {
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Input box styling */
+.inputBox {
+    margin-bottom: 20px;
+}
+
+.inputBox input,
+.inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    outline: none;
+    background-color: #f5f4fa;
+}
+
+.inputBox textarea::placeholder,
+.inputBox input::placeholder {
+    color: #444444;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.inputBox.error input,
+.inputBox.error textarea {
+    border-bottom: 1px solid red;
+}
+
+.inputBox textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Button styling */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 900;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #1b397f;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Make the button responsive */
+@media screen and (max-width: 600px) {
+    .btn {
+        font-size: 16px;
+    }
+}

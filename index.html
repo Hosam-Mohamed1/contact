@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>contact</title>
+</head>
+<body>
+    <div class="right">
+        <form id="contactForm" action="mailto:hosammihamed1686@gmail.com" method="post" enctype="text/plain">
+            <div class="inputBox">
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="inputBox">
+                <input type="email" name="email" placeholder="Enter your email address">
+            </div>
+            <div class="inputBox">
+                <textarea name="message" placeholder="Enter your message..."></textarea>
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <script>
+            function submitForm() {
+                document.getElementById('contactForm').submit();
+                return true;
+            }
+        
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                submitForm();
+            });
+        </script>
+</body>
+</html>
